@@ -22,21 +22,22 @@ const Contact = () => {
 
                     <a
                         href="mailto:smartbraeen@gmail.com"
-                        className="inline-block text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent hover:opacity-80 transition-opacity mb-16"
+                        className="inline-block p-8 rounded-full bg-white/5 hover:bg-primary/20 hover:scale-110 transition-all duration-300 mb-16 group"
                     >
-                        smartbraeen@gmail.com
+                        <Mail size={64} className="text-primary group-hover:text-white transition-colors" />
                     </a>
 
                     <div className="flex justify-center gap-8">
                         {[
-                            { icon: Github, href: "#" },
-                            { icon: Linkedin, href: "#" },
-                            { icon: Twitter, href: "#" },
+                            { icon: Github, href: "https://github.com/sideeq12" },
+                            { icon: Linkedin, href: "https://www.linkedin.com/in/waheed-sodiq-70456b200/" },
                             { icon: Mail, href: "mailto:smartbraeen@gmail.com" }
                         ].map((item, index) => (
                             <motion.a
                                 key={index}
                                 href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 whileHover={{ y: -5 }}
                                 className="p-4 bg-white/5 rounded-full text-gray-300 hover:text-white hover:bg-primary transition-all duration-300"
                             >

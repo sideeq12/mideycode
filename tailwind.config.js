@@ -16,7 +16,7 @@ export default {
           800: '#121212',
           700: '#1c1c1c',
         },
-        primary: '#6366f1', // Indigo 500
+        primary: '#1e3a8a', // Deep Blue (Updated)
         accent: '#8b5cf6', // Violet 500
       },
       animation: {
